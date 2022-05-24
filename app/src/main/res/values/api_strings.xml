@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_url" translatable="false">https://api-test01.moneyboxapp.com/</string>
+    <string name="app_id" translatable="false">3a97b932a9d449c981b595</string>
+    <string name="app_version" translatable="false">7.15.0</string>
+    <string name="api_version" translatable="false">3.0.0</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/decision_dest">
+
+    <fragment
+        android:id="@+id/decision_dest"
+        android:name="com.example.minimoney.ui.decision.DecisionFragment"
+        android:label="Decision Screen">
+
+        <action
+            android:id="@+id/navigate_from_decision_to_login"
+            app:destination="@+id/login_dest"
+            app:popUpTo="@id/decision_dest"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/navigate_from_decision_to_user_accounts"
+            app:destination="@+id/user_accounts_dest"
+            app:popUpTo="@id/decision_dest"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_dest"
+        android:name="com.example.minimoney.ui.login.LoginFragment"
+        android:label="Login Screen"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/navigate_from_login_to_user_accounts"
+            app:destination="@+id/user_accounts_dest"
+            app:popUpTo="@id/main_navigation"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_accounts_dest"
+        android:name="com.example.minimoney.ui.user.UserAccountsFragment"
+        android:label="User Screen"
+        tools:layout="@layout/fragment_user_accounts">
+
+        <action
+            android:id="@+id/navigate_from_user_accounts_to_individual_account"
+            app:destination="@+id/individual_account_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/individual_account_dest"
+        android:name="com.example.minimoney.ui.account.IndividualAccountFragment"
+        android:label="Account Screen"
+        tools:layout="@layout/fragment_individual_account" />
+
+    <action
+        android:id="@+id/navigate_to_decision"
+        app:destination="@+id/decision_dest"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+
+</navigation>

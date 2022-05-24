@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MiniMoney</string>
+    <!--    Lottie files-->
+    <string name="lottie_owl_coin_shower">owl_coin_shower.json</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_full_name">Full Name (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="email_address_error">Please enter a correct email address</string>
+    <string name="password_error">Please enter a correct password</string>
+    <string name="full_name_error">Please enter your full name</string>
+    <string name="input_valid">Input is valid!</string>
+    <!-- Main -->
+    <string name="unauthorized_dialog_title">Invalid session</string>
+    <string name="unauthorized_dialog_message">Your session is no longer valid, please authenticate again.</string>
+    <string name="button_ok_label">OK</string>
+    <!-- Login -->
+    <string name="login_error_wrong_password_or_email">Wrong password or email!</string>
+    <string name="login_error_too_many_attempts">Too many attempts! Try again in 5 minutes</string>
+    <string name="login_error_generic_error">Unable to login! Please try again later</string>
+    <!-- User Accounts -->
+    <string name="user_accounts_hello_without_name_text">Hello</string>
+    <string name="user_accounts_hello_with_name_text">Hello, %s</string>
+    <string name="user_accounts_total_plan_value_text">Total Plan Value: £%.2f</string>
+    <!-- Account -->
+    <string name="account_plan_value_text">Plan Value: £%.2f</string>
+    <string name="account_moneybox_text">Moneybox: £%.2f</string>
+    <!-- Individual Account -->
+    <string name="individual_account_add_button_text">Add: £%.0f</string>
+    <string name="individual_account_add_request_success">Successfully added £%d to this account!</string>
+    <string name="individual_account_add_request_fail">Unable to add £%d to this account!</string>
+</resources>
